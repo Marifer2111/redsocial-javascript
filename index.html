@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Social</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <h1>Red social Esmeralda</h1>
+    <h2>¿En qué estas pensando en este momento?</h2>
+    <form id="postForm" onsubmit="event.preventDefault(); postData()">
+        <label for="postTitle">Título:</label>
+        <input type="text" id="postTitle" required>
+        <label for="postBody">Comentarios:</label>
+        <textarea type="text" id="postBody" required></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+    <ul id="postList"></ul>
+
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
